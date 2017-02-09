@@ -1,0 +1,13 @@
+{% extends "base.html.twig" %}
+
+{% block title %}Guess!{% endblock %}
+
+{% block content %}
+<h2>Guess a letter</h2>
+<form action="/hangman" method="post">
+    <label for="guess">Guess a letter: </label>
+    <input type="text" id="guess" name="guess">
+    <button type="submit">Guess</button>
+</form>
+
+{% endblock %}
